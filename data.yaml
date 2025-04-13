@@ -1,0 +1,5 @@
+train: C:\Users\Rizvi\Desktop\Milestone_2\data\images\train
+val: C:\Users\Rizvi\Desktop\Milestone_2\data\images\val
+
+nc: 1
+names: ['Signboard']
