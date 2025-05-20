@@ -1,6 +1,6 @@
 # YOLOv8 Object Detection: Signboard Detection
 
-This project implements an object detection system using the YOLOv8 model to detect **Signboards** from images. The dataset was annotated using **CVAT**, preprocessed, and split into training, validation, and test sets. The model was trained using this custom-labeled data, evaluated with standard performance metrics, and tested on unseen images for real-world prediction.
+This project implements an object detection system using the **YOLOv8** model to detect **Signboards** from images. The dataset was annotated using **CVAT**, preprocessed, and split into training, validation, and test sets. The model was trained using this custom-labeled data, evaluated with standard performance metrics, and tested on unseen images for real-world prediction.
 
 ---
 
@@ -9,7 +9,7 @@ This project implements an object detection system using the YOLOv8 model to det
 - Trained **YOLOv8s** model for detecting signboards.
 - Supports **training**, **validation**, and **inference**.
 - Organized image data into YOLO-compliant structure: `images/` and `labels/` for `train`, `val`, and `test`.
-- Visualizes key YOLOv8 outputs (confusion matrix, PR/P/R curves, batch predictions).
+- Visualizes key YOLOv8 outputs (confusion matrix, Precision-Recall curves, batch predictions).
 - Stores trained weights and predictions.
 
 ---
