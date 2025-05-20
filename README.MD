@@ -1,55 +1,26 @@
 # YOLOv8 Object Detection – Signboard Detection Project
 
-This project leverages the YOLOv8 deep learning model to perform object detection on **signboards** from real-world images. The goal is to accurately detect and classify signboards using a custom dataset, with model training, validation, and prediction workflows implemented in Python and Jupyter Notebook.
-
----
-
-## Project Structure
-
-Object Detection/
-├── .gitattributes
-├── .gitignore
-├── data.yaml
-├── object_detection.ipynb
-├── object_detection.py
-├── yolov8s/ # YOLO model folder (probably config or code)
-├── Data/
-│ ├── images/
-│ │ ├── train/
-│ │ ├── val/
-│ │ └── test/
-│ └── labels/
-│ ├── train/
-│ ├── val/
-│ └── test/
-├── runs/
-│ └── detect/
-│ └── predict/
-├── weights/
-│ ├── best.pt
-│ ├── epoch1.pt
-│ └── last.pt
-
-
+This project implements an object detection system using the YOLOv8 model to detect **signboards** from images. The dataset was annotated using **CVAT**, preprocessed, and split into training, validation, and test sets. The model was trained using this custom-labeled data, evaluated with standard performance metrics, and tested on unseen images for real-world prediction.
 
 ---
 
 ## Key Features
 
-- Uses the **Ultralytics YOLOv8** model.
-- Trained on a **custom signboard dataset**.
+- Trained **YOLOv8s** model for detecting signboards.
+- Supports **training**, **validation**, and **inference**.
 - Organized image data into YOLO-compliant structure: `images/` and `labels/` for `train`, `val`, and `test`.
-- Includes steps for:
-  - Data preparation from CSVs and copying assets.
-  - Model training with configuration tuning (epochs, batch size, optimizer).
-  - Validation and evaluation (PR curve, confusion matrix, etc.).
-  - Inference and visualization on test data.
+- Visualizes key YOLOv8 outputs (confusion matrix, PR/P/R curves, batch predictions).
+- Stores trained weights and predictions.
 
 ---
 
 ## Dataset & Model Files
 
-Due to large file sizes, the `data/`, `runs/`, and `weights/` folders are hosted on Terabox. You can access them below:
+The dataset consists of custom-labeled signboard images annotated using CVAT (Computer Vision Annotation Tool) and converted to YOLO format:
+  - `images/` — Contains images split into `train/`, `val/`, and `test/`.
+  - `labels/` — YOLO-format `.txt` files with bounding box coordinates.
+  
+**Note:** Due to large size, the data/, runs/, and weights/ folders are hosted externally.
 
 | Folder      | Terabox Link |
 |-------------|--------------|
@@ -57,8 +28,6 @@ Due to large file sizes, the `data/`, `runs/`, and `weights/` folders are hosted
 | **weights/** (e.g., `best.pt`)     | [Link](https://1024terabox.com/s/1UeX81l_LEbOM0zzLKwyccg) |
 | **runs/** (e.g., training results) | [Link](https://1024terabox.com/s/1gJ439zWsCZnfOGH5FlmBOA) |
 | **data/** (images and labels)      | [Link](https://1024terabox.com/s/1R0_VnsJRYmV6oAfUrtx6nw) |
-
-> Download these folders and place them in the root directory of the project to run the code end-to-end.
 
 ---
 
@@ -101,7 +70,13 @@ Example metrics obtained after training and validation:
 - **mAP@0.5**: 0.74  
 - **mAP@0.5:0.95**: 0.59
 
-> Confusion matrices and PR curves can be found inside the `runs/detect/` folder.
+Output visualizations include:
+
+- Confusion matrix
+
+- PR / Precision / Recall curves
+
+- Annotated validation batch images
 
 ---
 
