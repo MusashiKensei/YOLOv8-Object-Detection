@@ -1,6 +1,6 @@
-# YOLOv8 Object Detection – Signboard Detection Project
+# YOLOv8 Object Detection: Signboard Detection
 
-This project implements an object detection system using the YOLOv8 model to detect **signboards** from images. The dataset was annotated using **CVAT**, preprocessed, and split into training, validation, and test sets. The model was trained using this custom-labeled data, evaluated with standard performance metrics, and tested on unseen images for real-world prediction.
+This project implements an object detection system using the YOLOv8 model to detect **Signboards** from images. The dataset was annotated using **CVAT**, preprocessed, and split into training, validation, and test sets. The model was trained using this custom-labeled data, evaluated with standard performance metrics, and tested on unseen images for real-world prediction.
 
 ---
 
@@ -20,14 +20,14 @@ The dataset consists of custom-labeled signboard images annotated using CVAT (Co
   - `images/` — Contains images split into `train/`, `val/`, and `test/`.
   - `labels/` — YOLO-format `.txt` files with bounding box coordinates.
   
-**Note:** Due to large size, the data/, runs/, and weights/ folders are hosted externally.
+**Note:** Due to large size, the `data/`, `runs/`, and `weights/` folders are hosted externally.
 
-| Folder      | Terabox Link |
+| Folder      | Download Link |
 |-------------|--------------|
 | **Main Folder (Object Detection)** | [Link](https://1024terabox.com/s/1hXJHMUzhMkVZY0ob63DHxA) |
-| **weights/** (e.g., `best.pt`)     | [Link](https://1024terabox.com/s/1UeX81l_LEbOM0zzLKwyccg) |
-| **runs/** (e.g., training results) | [Link](https://1024terabox.com/s/1gJ439zWsCZnfOGH5FlmBOA) |
-| **data/** (images and labels)      | [Link](https://1024terabox.com/s/1R0_VnsJRYmV6oAfUrtx6nw) |
+| **weights** (e.g., `best.pt`)     | [Link](https://1024terabox.com/s/1UeX81l_LEbOM0zzLKwyccg) |
+| **runs** (e.g., training results) | [Link](https://1024terabox.com/s/1gJ439zWsCZnfOGH5FlmBOA) |
+| **data** (images and labels)      | [Link](https://1024terabox.com/s/1R0_VnsJRYmV6oAfUrtx6nw) |
 
 ---
 
@@ -73,9 +73,7 @@ Example metrics obtained after training and validation:
 Output visualizations include:
 
 - Confusion matrix
-
-- PR / Precision / Recall curves
-
+- Precision-Recall (PR) curves
 - Annotated validation batch images
 
 ---
