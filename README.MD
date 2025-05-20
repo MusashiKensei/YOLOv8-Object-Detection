@@ -12,24 +12,24 @@ Object Detection/
 ├── data.yaml
 ├── object_detection.ipynb
 ├── object_detection.py
-├── yolov8s/                 # YOLO model folder (probably config or code)
+├── yolov8s/ # YOLO model folder (probably config or code)
 ├── Data/
-│   ├── images/
-│   │   ├── train/
-│   │   ├── val/
-│   │   └── test/
-│   └── labels/
-│       ├── train/
-│       ├── val/
-│       └── test/
+│ ├── images/
+│ │ ├── train/
+│ │ ├── val/
+│ │ └── test/
+│ └── labels/
+│ ├── train/
+│ ├── val/
+│ └── test/
 ├── runs/
-│   └── detect/
-│       └── predict/
+│ └── detect/
+│ └── predict/
 ├── weights/
-    ├── best.pt
-    ├── epoch1.pt
-    ├── ...
-    └── last.pt
+│ ├── best.pt
+│ ├── epoch1.pt
+│ └── last.pt
+
 
 
 ---
