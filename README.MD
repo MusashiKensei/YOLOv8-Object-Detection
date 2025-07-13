@@ -2,7 +2,7 @@
 
 This project implements an object detection system using the **YOLOv8** model to detect **Signboards** from images. The dataset was annotated using **CVAT**, preprocessed, and split into training, validation, and test sets. The model was trained using this custom-labeled data, evaluated with standard performance metrics, and tested on unseen images for real-world prediction.
 
-![Example Signboard Detection](example_images/your_image.jpg)
+![Example Signboard Detection](example_images/example_1.jpg)
 
 ---
 
